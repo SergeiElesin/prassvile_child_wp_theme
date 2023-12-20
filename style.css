@@ -1,0 +1,472 @@
+/**
+* Theme Name: Pressville Child
+* Theme URI: http://preview.lsvr.sk/pressville
+* Description: Pressville child theme
+* Author: LSVRthemes
+* Author URI: http://themeforest.net/user/LSVRthemes/portfolio
+* Template: pressville
+* Version: 2.0.0
+*/
+
+/* Add your custom CSS after this comment */
+
+/* -----------------------------------------------------------------------------
+
+    RESPONSIVE DEFINITIONS
+
+----------------------------------------------------------------------------- */
+/*CUSTOM*/
+
+/*размер логотипа*/
+.header-titlebar__logo {
+	max-width: 350px;
+}
+
+/*.header-titlebar__logo {*/
+/*	max-width: 700px;*/
+/*}*/
+
+/*размер текста призыва*/
+.header-titlebar__description {
+	font-size: 28px;
+	margin-left: -25px;
+}
+
+/*заголовок на странице*/
+.is-main-headline {
+	/*background-color: #f3f5f7;*/
+	/*margin-left: -30px;*/
+	/*margin-right: -30px;*/
+	text-align: center;
+	margin-top: -60px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+/*кнопка отправить*/
+input[type=submit] {
+	/*background-color: #c8cdd3;*/
+	/*color: white;*/
+	margin-bottom: 30px;
+	border: 1px solid grey;
+}
+/*анимация кнопки отправить*/
+input[type=submit] {
+	transition: all 300ms;
+}
+input[type=submit]:hover{
+	transition: all 300ms;
+	background-color: rgba(45,147,197, 0.3);
+}
+/* !*убрать отступ перед футером и хедером, а также по бокам*!*/
+.page__content {
+	margin-top: -60px;
+}
+
+/*кнопка "выходи онлайн"*/
+.get_online {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	border: 1px solid white;
+	border-radius: 3px;
+	transform: scale(1);
+	transition: 0.2s;
+}
+.get_online>a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.get_online>a:hover{
+	text-decoration: none;
+}
+.get_online:hover {
+	transform: scale(1.05);
+	transition: 0.2s;
+}
+
+/*видео с петровской площади*/
+.frame {
+	/*width: 1000px;*/
+	/*height: 500px;*/
+	/*width: 800px;*/
+	/*height: auto;*/
+}
+
+/*кнопка со ссылкой на все посты блога*/
+.btn-blog-link {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: -30px;
+}
+/*таксономии на странице отдельного поста блога*/
+.post__meta-item>.post__terms>a {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.post__meta-item>.post__terms>a:hover {
+	text-decoration: underline;
+}
+/*отступ слева от боковой панели на странице блога ("Боковая панель - блог")*/
+.pl {
+	padding-left: 80px;
+}
+/*отступ от капчи на странице контактов и странице ВЫХОДИ ОНЛАЙН*/
+.field-recaptcha {
+	margin-bottom: 30px;
+}
+/*виджет карта сайта*/
+.site-map {
+	background-color: #f3f5f7;
+}
+/*кастомные виджеты на странице блога*/
+.upw-posts.hfeed article header .entry-image{
+	float: left;
+	margin-right: 20px;
+}
+.upw-posts.hfeed article {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.entry-image a img {
+	border-radius: 4px;
+}
+/*таблицы вида по умолчанию*/
+.is-style-regular tr {
+	border: 1px solid black;
+}
+.is-style-regular td {
+	border: 1px solid black;
+}
+/*страница ВХОД*/
+ul.um-misc-ul {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	padding-left: 0;
+}
+.um-misc-ul li{
+	list-style-type: none;
+	display: block;
+}
+.um-misc-ul li a {
+	display: inline-block;
+	padding: 5px 20px;
+	line-height: normal;
+	font-weight: bold;
+	/*font-size: 0.8125em;*/
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	text-decoration: none;
+	border: 2px solid rgba(45,147,197,0.5);
+	border-radius: 20px;
+	font-size: 14px;
+	color: #2d93c5;
+	background-color: transparent;
+}
+.um-misc-ul li a:hover {
+	border-color: #2d93c5;
+}
+/*метка обязательного поля в форме*/
+sup {
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+}
+/*контактная формы*/
+.wpcf7-form-control{
+	max-width: 100%;
+}
+.wpcf7-form-control.wpcf7-submit {
+	max-width: 60%;
+}
+.brz-tp-heading2 {
+	color: rgb(164, 54, 42);
+}
+label {
+	margin-bottom: 20px;
+}
+.wpcf7-form.cf7sg-popup h2 {
+	font-family: sans-serif;
+}
+.wpcf7-form-control.wpcf7-submit {
+	border: none;
+	border-radius: 0;
+	color: white;
+	background-color: #a4362a;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	font-size: 16px;
+}
+.wpcf7-form-control.wpcf7-submit:hover {
+	background-color: #cd4335;
+	transform: scale(1.05);
+}
+.wpcf7-form {
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	/* 	border: 1px solid #a4362a; */
+	border-radius: 3px;
+}
+/*Рамка у сообщения об отправке формы*/
+.wpcf7 form .wpcf7-response-output{
+	border: 1px solid;
+}
+/* Рамка при получении фокуса */
+.wpcf7-form input:focus {
+	border: 1px solid #950e14;
+}
+.wpcf7-form .wpcf7-form-control.wpcf7-textarea:focus {
+	border: 1px solid #950e14;
+}
+/*Отступ кнопки отправить*/
+input[type=submit] {
+	margin-bottom: 0;
+}
+/*убрать баннер рекапчи*/
+.grecaptcha-badge {
+	/*visibility: hidden;*/
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+/*фото члена команды*/
+#meetus img {
+	border-radius: 50%;
+}
+/*кнопка на куки-виджете*/
+/* .cn-set-cookie.cn-button.bootstrap.cookie__button {
+	transform: scale(1);
+	transition: 0.2s;
+	background-color: #a4362a;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.cn-set-cookie.cn-button.bootstrap.cookie__button:hover {
+	transform: scale(1.05);
+	transition: 0.2s;
+	background-color: #cd4335;
+} */
+/*АНИМАЦИЯ ПРИЗЫВА ПРИ ЗАГРУЗКЕ СТРАНИЦЫ*/
+.header-titlebar__description {
+	-webkit-animation: pulsing 1.5s;
+	animation: pulsing 1.5s;
+	animation-iteration-count: 1;
+}
+@-webkit-keyframes pulsing {
+	0% {
+		-webkit-transform: scale(1.0, 1.0);
+		transform: scale(1.0, 1.0)
+	}
+	50% {
+		-webkit-transform: scale(1.5, 1.5);
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		-webkit-transform: scale(1.0, 1.0);
+		transform: scale(1.0, 1.0);
+	}
+}
+@keyframes pulsing {
+	0% {
+		-webkit-transform: scale(1.0, 1.0);
+		transform: scale(1.0, 1.0)
+	}
+	50% {
+		-webkit-transform: scale(1.5, 1.5);
+		transform: scale(1.5, 1.5);
+	}
+	100% {
+		-webkit-transform: scale(1.0, 1.0);
+		transform: scale(1.0, 1.0);
+	}
+}
+/*Стилизация текстового виджета*/
+.text-widget-content {
+	font-family: 'Lora', Arial, sans-serif;
+	color: #e1e7ec;
+}
+/*Cтилизация виджета объявлений*/
+.adverts-widget-recent-title, .adverts-icon-location {
+	padding-left: 10px;
+}
+/*Кнопка "Показать контакты" в объявлении*/
+a.adverts-button.adverts-show-contact {
+	background: #950e14;
+	color: white !important ;
+	border: 1px solid black;
+}
+a.adverts-button.adverts-show-contact:hover {
+	background: #f1f8fa;
+	color: #362e2a !important ;
+	border: 1px solid #950e14 ;
+	transform: scale(1.01);
+	transition: 300ms;
+}
+
+/*виджет контактов на странице контакты*/
+.elementor-widget-container .fab,
+.elementor-widget-container .fas,
+.elementor-widget-container .far {
+	margin-right: 10px;
+}
+.footer_mb {
+	margin-bottom: 10px;
+}
+
+/*Максимальная ширина профиля Ultimate Member*/
+.um {
+	max-width:1000px;
+}
+/*Максимальная ширина логина Ultimate Member*/
+.um-login,
+.um-register{
+	max-width:450px;
+}
+
+/*Личный кабинет UM*/
+.um-profile-meta {
+	padding-left: 250px;
+}
+.um-profile-photo {
+	margin: -100px 0 0 30px;
+}
+
+/*логин и аватар пользователя в дополнительном меню*/
+.header-topbar .header-menu-secondary__list img {
+	width: 10px;
+	border-radius: 50%;
+	transform: scale(3);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.menu_user {
+	float: right;
+}
+/* Цвет кнопки авторизации через гугл */
+div div .um.um a.um-button.um-button-google {
+	background-color: #a4362a !important;
+}
+div div .um.um a.um-button.um-button-google:hover {
+	background-color: #950e14 !important;
+}
+/* Цвет кнопки авторизации через инстаграм */
+div div .um.um a.um-button.um-button-instagram {
+	background-color: #e13f7d !important;
+}
+div div .um.um a.um-button.um-button-instagram:hover {
+	background-color: #c33c90 !important;
+}
+/*Проценты на странице о нас*/
+.prsnt{
+	float: right !important;
+	margin-right: 10px;
+}
+/* Кнопки соцсетей в футере */
+.footer-social__link {
+	background-color: #a4362a !important;
+}
+.footer-social__link:hover {
+	background-color: #c75d5f !important;
+}
+/* 	Виджет курсов SEO */
+.pulse-button{
+	animation: radial-pulse 2s infinite;
+	font-size: 15px;
+}
+
+@keyframes radial-pulse {
+	0% {
+		box-shadow: 0 0 0 0px rgba(45,147,197, 0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+	}
+}
+
+/* картинка-заглушка в объявлении */
+.advert-img {
+	background-image: url(https://narva-online.ee/wp-content/uploads/2022/02/NoImage-310x190.png) !important;
+}
+.ad
+
+
+
+
+    /* -------------------------------------------------------------------------
+        LARGE DEVICES
+		devices with width between 992px and 1199px
+    ------------------------------------------------------------------------- */
+
+    @media ( max-width: 1199px ) {
+
+		/* your CSS here */
+
+	}
+
+    /* -------------------------------------------------------------------------
+        MEDIUM DEVICES
+		devices with width between 768px and 991px
+    ------------------------------------------------------------------------- */
+
+    @media ( max-width: 991px ) {
+
+		/* your CSS here */
+		/*отступ слева от боковой панели на странице блога*/
+		.pl {
+			padding-left: 12px;
+		}
+		/*Кнопка отправить*/
+		.wpcf7-form-control.wpcf7-submit {
+			max-width: 80%;
+		}
+		/*кнопка ВЫХОД В ОНЛАЙН*/
+		.get_online {
+			font-size: 1.2em;
+			text-transform: uppercase;
+			border: 1px solid #cd4335 !important;
+		}
+		/*отсуп снизу от кнопки при добавлении иллюстрации в объявление*/
+		.adverts-gallery {
+			min-height: 160px;
+		}
+
+	}
+
+	/* -------------------------------------------------------------------------
+        SMALL DEVICES
+		devices with width between 481px and 767px
+    ------------------------------------------------------------------------- */
+
+    @media ( max-width: 767px ) {
+
+		/* your CSS here */
+		/*Кнопка отправить*/
+		.wpcf7-form-control.wpcf7-submit {
+			max-width: 100%;
+		}
+
+	}
+
+	/* -------------------------------------------------------------------------
+        EXTRA SMALL DEVICES
+		devices with width up to 480px
+    ------------------------------------------------------------------------- */
+
+	@media ( max-width: 480px ) {
+
+		/* your CSS here */
+
+	}
